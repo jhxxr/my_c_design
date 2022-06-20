@@ -8,12 +8,12 @@ struct font{
 
 };
 int main(){
-    FIRE *fp;
+    FILE * fp;
     int rows=0;
     int c ;
     int i,j,k;
 struct font fonts[102];
-char buffer[0][100]={0};
+char buffer[8][100]={0};
     fp=fopen("3-d.flf","r");
     if(fp==NULL){
         exit(0);
@@ -35,7 +35,7 @@ char buffer[0][100]={0};
                         fonts[i].img[j][k]=' ';
                     }
                     if(fonts[i].img[j][k]=='@'){
-                        fonts[i].img[j][k]='\0'
+                        fonts[i].img[j][k]='\0';
                         break;
                     }
                 }
@@ -53,7 +53,7 @@ char buffer[0][100]={0};
     */
     for(i=0;i<8;i++){
         strcat(buffer[i],fonts[65].img[i]);
-        strcat(buffer[i].fonts[66].img[i]);
+        strcat(buffer[i],fonts[66].img[i]);
     }
     for(i=0;i<8;i++){
         printf("%s\n",buffer[i]);
