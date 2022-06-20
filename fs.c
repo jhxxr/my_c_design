@@ -12,12 +12,11 @@ int main(){
     int rows=0;
     int c ;
     int i,j,k;
-struct font fonts[102];
-char buffer[8][100]={0};
+    struct font fonts[102];
+    char buffer[8][100]={0};
     fp=fopen("3-d.flf","r");
     if(fp==NULL){
         exit(0);
-
     }
     while(1){
         c=fgetc(fp);
@@ -27,6 +26,7 @@ char buffer[8][100]={0};
                 break;
             }
         }
+    }
         for (i=0;i<102;i++){
             for(j=0;j<8;j++){
                 fgets(fonts[i].img[j],30,fp);
@@ -40,10 +40,10 @@ char buffer[8][100]={0};
                     }
                 }
             }
-            fonts[i].c=i+2;//转换为*的ACII码值，42
+            fonts[i].c=i+32;//转换为*的ACII码值，42
             fonts[i].width=strlen(fonts[i].img[0]);
         }
-    }
+    
     fclose(fp);
     /*
     for (i=0;i<8;i++){
