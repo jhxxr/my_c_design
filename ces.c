@@ -1,5 +1,10 @@
 #include <stdio.h>
-//测试
-int main(){
-    int a;
+int add(int a ,int b){
+    int c ;
+    c= a+b;
+    return c;
+}
+int main (){
+    int i=2,j=3;
+    int x= add(i,j) + 5;
 }
