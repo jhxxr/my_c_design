@@ -25,7 +25,7 @@ struct font fonts[102];
             }
         }
         for (i=0;i<102;i++){
-            for(j=0;jj<8;j++){
+            for(j=0;j<8;j++){
                 fgets(fonts[i].img[j],30,fp);
             }
         }
