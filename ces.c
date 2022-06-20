@@ -1,6 +1,24 @@
 #include <stdio.h>
-int main(int argc ,char *atgv[]){
+#include <stdlib.h>
+
+
+int main (int argc,char *argv[]){
     int i;
-    for (i= 0 ; i< argc ;i++)
-    printf("argc[%d]:%s\n",i,argc[i]);
+	char align= '1';
+	int width = 10;
+    for (i = 0;i<argc;i++){
+        if (argv[i][0]=='-'){
+            switch(argv[i][0]){
+                case 'l':
+                case 'r':
+                case 'c':
+                   align = argv[i][0];
+                   break;
+                case 'w':
+                   width = atoi(argv[i+1]);
+                   break;
+            }
+        }  
+    }
+    printf ("slign=%c,width = %d",align,width);
 }
