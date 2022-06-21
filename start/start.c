@@ -1,3 +1,4 @@
+//不可换字体文件版
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,9 +27,6 @@ int main (int argc,char *argv[]){
                 case 'r':
                 case 'c':
                    align = argv[i][1];
-                   if(align=='f'){
-                       align='1';
-                   }
                    if (i+1>start)
                        start = i+1;
                    break;
