@@ -1,9 +1,8 @@
-//
-//
-//
-//
-//
-//
+//**2022年6月20日
+//**本文件为课堂示例代码
+//**作用：读取字体文件
+//**
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -64,8 +63,8 @@ int main(){
     printf("char=%c,width=%d\n",fonts[10].c,fonts[10].width);
     */
     for(i=0;i<8;i++){
-        strcat(buffer[i],fonts[65].img[i]);
-        strcat(buffer[i],fonts[66].img[i]);
+        strcat(buffer[i],fonts[65].img[i]);//字母a的asii码值
+        strcat(buffer[i],fonts[66].img[i]);//字母b的asii码值
     }
     for(i=0;i<8;i++){
         printf("%s\n",buffer[i]);
