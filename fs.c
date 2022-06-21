@@ -1,12 +1,24 @@
+//
+//
+//
+//
+//
+//
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+
+//创建一个结构体，用于存储命令行参数
 struct font{
     char img[8][25];
     int width;
     char c;
 
 };
+
+
+
 int main(){
     FILE * fp;
     int rows=0;
