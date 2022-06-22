@@ -1,4 +1,7 @@
-void parse(int argc .char *argv[],char *align,int *width,char message[]){
+#include <stdlib.h>
+#include <string.h>
+
+void parse(int argc ,char *argv[],char *align,int *width,char message[]){
     int i;
 	//char align= '1';
 	//int width = 10;

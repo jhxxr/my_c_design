@@ -11,7 +11,7 @@ int main(int argc,char *argv[]){
     char align;
     char message[100];
 
-    parse(argc,argv,&width,&align,message);
+    parse(argc,argv,&align,&width,message);
     loadfonts();
     display(align,width,message);
 
