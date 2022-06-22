@@ -10,6 +10,7 @@ void displayline(char *start,char *end ,char align ,int width){
             strcat(buffer[i],getfont(*p).img[i])
         }
     }
+    
     if (align=='c'){
         sp=(width-strlen(buffer[0]))/2;
     }else if (align =='r'){
