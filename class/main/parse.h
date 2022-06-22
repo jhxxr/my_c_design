@@ -1,1 +1,1 @@
-void parse(int argc,char *argv[],char *align,char *width,char message[]);
+void parse(int argc,char *argv[],char *align,int *width,char message[]);
