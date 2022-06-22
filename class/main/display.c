@@ -20,10 +20,10 @@ void displayline(char *start,char *end ,char align ,int width){
     char buffer[8][200]={0};
     int i,j;
     char *p;
-    int s=0;
+    int sp=0;
     for(i=0;i<8;i++){
         for (p=start;p<=end;p++){
-            strcat(buffer[i],getfont(*p).img[i])
+            strcat(buffer[i],getfont(*p).img[i]);
         }
     }
     
@@ -35,8 +35,7 @@ void displayline(char *start,char *end ,char align ,int width){
     }
     for(i=0;i<8;i++){
         for(j=0;j<sp;j++){
-            printf(" ")
-
+            printf(" ");
         }
         printf("%s\n",buffer[i]);
     }
@@ -45,9 +44,9 @@ char *split(char *start,int width){
     char *p=start;
     int cur =0;
     struct font f;
-    while(*p='\0'){
-        f= getfont(*p);
-        if (f.width+cur=<width){
+    while(*p !='\0'){
+        f = getfont(*p);
+        if (f.width+cur<=width){
             cur +=f.width;
             p++;
         } else {

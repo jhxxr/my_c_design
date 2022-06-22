@@ -29,7 +29,7 @@ void load(FILE *fp){
     int i,j;
     for(i = 0;i<102;i++){
         for(j = 0;j<8;j++){
-            fgets(fonts[i].img[j],30,fp)
+            fgets(fonts[i].img[j],30,fp);
         }
         fonts[i].c = i +32;
     }
@@ -40,7 +40,7 @@ void clear(){
     for (i=0;i<102;i++){
         for(j=0;j<8;j++){
             for(k=0;;k++){
-                if(fonts[i].img[j][k]=="$"){
+                if(fonts[i].img[j][k]=='$'){
                     fonts[i].img[j][k]=' ';
                 }
                 if(fonts[i].img[j][k]=='@'){
