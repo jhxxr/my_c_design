@@ -1,0 +1,60 @@
+﻿生成启动时间为 2022/06/22 20:46:00。
+     1>项目“E:\0JHX\vsc_c\project\project\project.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\project.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\project.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt display.c fileflf.c loadfonts.c main.c parse.c
+         parse.c
+     1>e:\0jhx\vsc_c\project\project\parse.c(30): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+     1>e:\0jhx\vsc_c\project\project\parse.c(31): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+     1>e:\0jhx\vsc_c\project\project\parse.c(34): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+         main.c
+         loadfonts.c
+     1>e:\0jhx\vsc_c\project\project\loadfonts.c(16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+         fileflf.c
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(18): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(6): warning C4101: “k”: 未引用的局部变量
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(6): warning C4101: “j”: 未引用的局部变量
+         display.c
+     1>e:\0jhx\vsc_c\project\project\display.c(26): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
+         正在生成代码...
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(29): warning C4715: “skipline”: 不是所有的控件路径都返回值
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\project.exe.embed.manifest.res" Debug\project_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\0JHX\vsc_c\project\Debug\project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\0JHX\vsc_c\project\Debug\project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\0JHX\vsc_c\project\Debug\project.lib" /MACHINE:X86 Debug\project.exe.embed.manifest.res
+         Debug\display.obj
+         Debug\fileflf.obj
+         Debug\loadfonts.obj
+         Debug\main.obj
+         Debug\parse.obj
+       Manifest:
+         正在删除文件“Debug\project.exe.embed.manifest”。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\project.exe.embed.manifest" /manifest Debug\project.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\project.exe.embed.manifest.res" Debug\project_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\0JHX\vsc_c\project\Debug\project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\0JHX\vsc_c\project\Debug\project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\0JHX\vsc_c\project\Debug\project.lib" /MACHINE:X86 Debug\project.exe.embed.manifest.res
+         Debug\display.obj
+         Debug\fileflf.obj
+         Debug\loadfonts.obj
+         Debug\main.obj
+         Debug\parse.obj
+         project.vcxproj -> E:\0JHX\vsc_c\project\Debug\project.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\project.unsuccessfulbuild”。
+         正在对“Debug\project.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\0JHX\vsc_c\project\project\project.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.08

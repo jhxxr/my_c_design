@@ -1,9 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
-
-//读取跳过文件行数
 int skipline(char *fliename,int *flfskip,int *flfheight){
     FILE * fp;
     int rowx=0;
@@ -30,17 +26,4 @@ int skipline(char *fliename,int *flfskip,int *flfheight){
         }
     }
     fclose(fp);
-}
-
-
-
-int main(){
-    int flfh = 0;
-    int flfs = 0;
-    int *flfheight = &flfh;
-    int *flfskip = &flfs;
-    char fliename[]="3-d.flf";
-    skipline(fliename,flfskip,flfheight);
-    printf("%d\n%d",flfh,flfs);
-
 }

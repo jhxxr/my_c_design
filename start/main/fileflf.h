@@ -1,0 +1,1 @@
+int skipline(char *fliename,int *flfskip,int *flfheight);

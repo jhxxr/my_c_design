@@ -1,0 +1,1 @@
+void display(char align,int width,char message[]);
