@@ -1,10 +1,5 @@
 #include <stdio.h>
-
-
-
-
-
-
+#include "display.h"
 #include "parse.h"
 #include "loadfonts.h"
 
