@@ -1,4 +1,5 @@
 //可换字体文件版
+//将打印写成函数，重写
 //字体文件保存在fonts文件夹中
 #include <stdio.h>
 #include <stdlib.h>
