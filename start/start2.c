@@ -1,25 +1,25 @@
-//¿É»»×ÖÌåÎÄ¼ş°æ
-//½«´òÓ¡Ğ´³Éº¯Êı£¬ÖØĞ´
-//×ÖÌåÎÄ¼ş±£´æÔÚfontsÎÄ¼ş¼ĞÖĞ
+//å¯æ¢å­—ä½“æ–‡ä»¶ç‰ˆ
+//å°†æ‰“å°å†™æˆå‡½æ•°ï¼Œé‡å†™
+//å­—ä½“æ–‡ä»¶ä¿å­˜åœ¨fontsæ–‡ä»¶å¤¹ä¸­
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//¶¨Òå½á¹¹Ìå
+//å®šä¹‰ç»“æ„ä½“
 
 struct font{
     char img[8][25];
     int width;
     char c;
 };
-//×ÖÌåÎÄ¼ş´¦Àíº¯Êı
+//å­—ä½“æ–‡ä»¶å¤„ç†å‡½æ•°
 int chuli(char *ttf);
-//´òÓ¡º¯Êı
+//æ‰“å°å‡½æ•°
 int outprint(char *mes,char *ttf);
 
 
 
 //***********************************************************************************************
-//Ö÷º¯Êı »ñÈ¡ÃüÁîĞĞ²ÎÊı
+//ä¸»å‡½æ•° è·å–å‘½ä»¤è¡Œå‚æ•°
 int main (int argc,char *argv[]){
     int i;
     char ttf[50]="3-D";
@@ -67,7 +67,7 @@ int main (int argc,char *argv[]){
 
 
 //***********************************************************************************************
-//´òÓ¡º¯Êı
+//æ‰“å°å‡½æ•°
 int outprint(char *mes,char *ttf){
     FILE * fp;
     int rows=0,rowx=0;
@@ -78,7 +78,7 @@ int outprint(char *mes,char *ttf){
     int i,j,k;
     struct font fonts[102];
     char buffer[8][100]={0};
-    chuli(ttf);//´¦Àíttf±äÁ¿
+    chuli(ttf);//å¤„ç†ttfå˜é‡
     fp=fopen(ttf,"r");
     if(fp==NULL){
         exit(0);
@@ -119,7 +119,7 @@ int outprint(char *mes,char *ttf){
     fclose(fp);
     for(i=0;i<8;i++){
         for(j=0;j<100;j++){
-            mzt = mes[j]-32;//ÔÚ×ÖÌåÖĞµÄÎ»ÖÃ
+            mzt = mes[j]-32;//åœ¨å­—ä½“ä¸­çš„ä½ç½®
             strcat(buffer[i],fonts[mzt].img[i]);
             }
     }
@@ -135,9 +135,9 @@ int outprint(char *mes,char *ttf){
 
 
 //***********************************************************************************************
-//´¦Àíttf±äÁ¿
+//å¤„ç†ttfå˜é‡
 int chuli(char *ttf){
-    //´òÓ¡ttf±äÁ¿
+    //æ‰“å°ttfå˜é‡
     int i;
     char tt[50]={0};
     char wei[4]=".flf";
@@ -145,16 +145,16 @@ int chuli(char *ttf){
     for(i=0;i<50;i++){
         tt[i]=ttf[i];
     }
-    //½«wei·ÅÈëttf±äÁ¿
+    //å°†weiæ”¾å…¥ttfå˜é‡
     for(i=0;i<4;i++){
         ttf[i+strlen(tt)]=wei[i];
     }
     strcpy(tt,ttf);
-    //½«ttf·ÅÈëtou±äÁ¿
+    //å°†ttfæ”¾å…¥touå˜é‡
     for(i=0;i<strlen(tt);i++){
         tou[i+6]=ttf[i];
     }
-    //½«tou·ÅÈëttf±äÁ¿
+    //å°†touæ”¾å…¥ttfå˜é‡
     strcpy(ttf,tou);
 }
 //***********************************************************************************************
