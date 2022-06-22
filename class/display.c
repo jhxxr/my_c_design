@@ -1,4 +1,6 @@
 #include "loadfonts.h"
+#include <string.h>
+#include <stdio.h>
 void displayline(char *start,char *end ,char align ,int width){
     char buffer[8][200]={0};
     int i;
@@ -28,7 +30,7 @@ void display(char align,int width,char message[]){
     char *s=message;
     har *e;
     while(s!='\0'){
-        e=split(*s,width);
+        e=split(s,width);
         displayline(s,e,align,width);
         s=e+1;
 
