@@ -1,0 +1,1 @@
+void parse(int argc,char *argv[],char *align,int *width,char message[],char fliename[]);

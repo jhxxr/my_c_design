@@ -1,5 +1,5 @@
 struct font{
-    char img[8][25];
+    char img[100][100];
     int width;
     char c;
 

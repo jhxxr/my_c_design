@@ -1,4 +1,4 @@
-﻿生成启动时间为 2022/06/22 20:46:00。
+﻿生成启动时间为 2022/06/23 19:08:26。
      1>项目“E:\0JHX\vsc_c\project\project\project.vcxproj”在节点 2 上(rebuild 个目标)。
      1>_PrepareForClean:
          正在删除文件“Debug\project.lastbuildstate”。
@@ -7,28 +7,28 @@
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt display.c fileflf.c loadfonts.c main.c parse.c
          parse.c
-     1>e:\0jhx\vsc_c\project\project\parse.c(30): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\parse.c(32): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
-     1>e:\0jhx\vsc_c\project\project\parse.c(31): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\parse.c(33): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
-     1>e:\0jhx\vsc_c\project\project\parse.c(34): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\parse.c(36): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
          main.c
          loadfonts.c
-     1>e:\0jhx\vsc_c\project\project\loadfonts.c(16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\loadfonts.c(18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
          fileflf.c
-     1>e:\0jhx\vsc_c\project\project\fileflf.c(12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
-     1>e:\0jhx\vsc_c\project\project\fileflf.c(18): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
-     1>e:\0jhx\vsc_c\project\project\fileflf.c(6): warning C4101: “k”: 未引用的局部变量
-     1>e:\0jhx\vsc_c\project\project\fileflf.c(6): warning C4101: “j”: 未引用的局部变量
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(7): warning C4101: “k”: 未引用的局部变量
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(7): warning C4101: “j”: 未引用的局部变量
          display.c
-     1>e:\0jhx\vsc_c\project\project\display.c(26): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\0jhx\vsc_c\project\project\display.c(31): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
          正在生成代码...
-     1>e:\0jhx\vsc_c\project\project\fileflf.c(29): warning C4715: “skipline”: 不是所有的控件路径都返回值
+     1>e:\0jhx\vsc_c\project\project\fileflf.c(34): warning C4715: “skipline”: 不是所有的控件路径都返回值
        ManifestResourceCompile:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\project.exe.embed.manifest.res" Debug\project_manifest.rc 
        Link:
@@ -57,4 +57,4 @@
 
 生成成功。
 
-已用时间 00:00:01.08
+已用时间 00:00:01.03

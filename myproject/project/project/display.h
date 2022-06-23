@@ -1,1 +1,1 @@
-void display(char align,int width,char message[]);
+void display(char align,int width,char message[],int hei);

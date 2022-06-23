@@ -3,16 +3,12 @@
 #include "parse.h"
 #include "loadfonts.h"
 
-
-
-int main(int argc,char *argv[]){
-    ///align,width,message
+int main(int argc, char *argv[])
+{
     int width;
     char align;
     char message[100];
-
-    parse(argc,argv,&align,&width,message);
+    parse(argc, argv, &align, &width, message);
     loadfonts();
-    display(align,width,message);
-
+    display(align, width, message);
 }
