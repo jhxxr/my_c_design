@@ -1,12 +1,8 @@
 #include <stdlib.h>
 #include <string.h>
-
 void parse(int argc ,char *argv[],char *align,int *width,char message[]){
     int i;
-	//char align= '1';
-	//int width = 10;
     int start = 1;
-    //char message[100]={0};
     message[0]='\0';
     for (i = 0;i<argc;i++){
         if (argv[i][0]=='-'){
@@ -23,6 +19,7 @@ void parse(int argc ,char *argv[],char *align,int *width,char message[]){
                    if(i+2>start)
                        start = i+2;
                    break;
+                     
             }
         }  
     }
@@ -30,6 +27,5 @@ void parse(int argc ,char *argv[],char *align,int *width,char message[]){
         strcat(message,argv[i]);
         strcat(message," ");
     }
-
     strcat(message,argv[i]);
 }

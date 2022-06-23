@@ -1,10 +1,8 @@
 #include "loadfonts.h"
 #include <string.h>
 #include <stdio.h>
-
 void displayline(char *start,char *end ,char align ,int width);
 char *split(char *start,int width);
-
 void display(char align,int width,char message[]){
     char *s=message;
     char *e;
@@ -12,10 +10,8 @@ void display(char align,int width,char message[]){
         e=split(s,width);
         displayline(s,e,align,width);
         s=e+1;
-
     }
 }
-
 void displayline(char *start,char *end ,char align ,int width){
     char buffer[8][200]={0};
     int i,j;
@@ -26,12 +22,10 @@ void displayline(char *start,char *end ,char align ,int width){
             strcat(buffer[i],getfont(*p).img[i]);
         }
     }
-    
     if (align=='c'){
         sp=(width-strlen(buffer[0]))/2;
     }else if (align =='r'){
         sp =width-strlen(buffer[0]);
-
     }
     for(i=0;i<8;i++){
         for(j=0;j<sp;j++){
@@ -51,7 +45,6 @@ char *split(char *start,int width){
             p++;
         } else {
             break;
-
         }
     }
     return --p;
