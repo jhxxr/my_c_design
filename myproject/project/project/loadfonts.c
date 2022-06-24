@@ -67,6 +67,11 @@ void clear(int flfh)
                     fonts[i].img[j][k] = '\0';
                     break;
                 }
+                if (fonts[i].img[j][k] == '#')
+                {
+                    fonts[i].img[j][k] = '\0';
+                    break;
+                }
             }
         }
         fonts[i].width = strlen(fonts[i].img[0]);
