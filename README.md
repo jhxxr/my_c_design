@@ -1,10 +1,10 @@
 # About
-本仓库仅供个人学习使用，如有侵权，请联系作者删除。
+本仓库仅供个人学习使用。
 
 点击上方`View code`即可查看。
 
 
-可以关注我的[博客](https://blog.jhx.asia)更新。
+可以关注我的[博客](https://blog.jhxjhx.top)更新。
 
 
 
